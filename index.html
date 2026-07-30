@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jodhpur Ghantaghar Browser</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    height:80px;
+    background:linear-gradient(90deg,#8b4513,#d2691e,#ff9800);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.logo h1{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu button{
+    background:white;
+    color:#8b4513;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+/* HERO */
+
+.hero{
+
+    height:420px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.7)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ghantaghar%2CJodhpur.jpg/330px-Ghantaghar%2CJodhpur.jpg")
+    center/cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+
+.hero h2{
+    font-size:48px;
+    text-shadow:3px 3px 10px black;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+
+/* SEARCH */
+
+.search-box{
+
+    margin-top:30px;
+    width:70%;
+    max-width:700px;
+    display:flex;
+
+}
+
+.search-box input{
+
+    flex:1;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:30px 0 0 30px;
+    font-size:18px;
+
+}
+
+.search-box button{
+
+    width:120px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:0 30px 30px 0;
+    cursor:pointer;
+
+}
+
+
+/* SECTION */
+
+.container{
+
+    padding:30px;
+
+}
+
+
+.card-area{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+
+.card{
+
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.card h3{
+
+    color:#ff9800;
+    margin-bottom:10px;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ghantaghar%2CJodhpur.jpg/330px-Ghantaghar%2CJodhpur.jpg">
+
+<h1>Jodhpur Browser</h1>
+
+</div>
+
+
+<div class="menu">
+
+<button>Home</button>
+<button>Explore</button>
+<button>Tour</button>
+
+</div>
+
+</header>
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h2>Welcome To Jodhpur</h2>
+
+<p>
+The Blue City • Rajasthan Heritage • Ghantaghar Market
+</p>
+
+
+<div class="search-box">
+
+<input 
+type="text" 
+placeholder="Search Jodhpur Places, Food, Hotels..."
+id="searchInput"
+>
+
+<button onclick="searchPlace()">
+Search
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+
+<div class="card-area">
+
+
+<div class="card">
+
+<h3>🕰 Ghantaghar</h3>
+
+<p>
+Jodhpur का प्रसिद्ध Clock Tower और आसपास का Sardar Market.
+यहां आपको राजस्थानी सामान, handicraft और local shopping मिलेगी।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏰 Mehrangarh Fort</h3>
+
+<p>
+भारत के सबसे शानदार किलों में से एक।
+ऊंची पहाड़ी पर बना यह किला Jodhpur की पहचान है।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>💙 Blue City</h3>
+
+<p>
+नीले रंग से रंगे पुराने घरों के कारण Jodhpur को Blue City कहा जाता है।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🍛 Jodhpur Food</h3>
+
+<p>
+मिर्ची बड़ा, मावा कचौरी, दाल बाटी चूरमा और राजस्थानी स्वाद।
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+<!-- FEATURE SECTION -->
+
+<section class="container">
+
+<h2 style="
+text-align:center;
+color:#ff9800;
+margin-bottom:25px;
+">
+Explore Jodhpur
+</h2>
+
+
+<div class="card-area">
+
+
+<div class="card">
+
+<h3>📍 Tourist Places</h3>
+
+<p>
+• Ghantaghar  
+<br>
+• Mehrangarh Fort
+<br>
+• Jaswant Thada
+<br>
+• Umaid Bhawan Palace
+<br>
+• Mandore Garden
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🛍 Shopping</h3>
+
+<p>
+• Sardar Market
+<br>
+• Bandhani Dress
+<br>
+• Mojari
+<br>
+• Handicraft Items
+<br>
+• Spices
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🚕 Travel</h3>
+
+<p>
+Auto Rickshaw, Taxi और Local Transport
+के साथ Jodhpur घूमने की जानकारी।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🌅 Experience</h3>
+
+<p>
+Sunset View, Fort View और Blue City Photography
+के लिए शानदार जगह।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CLOCK SECTION -->
+
+<section class="clock-box">
+
+
+<h2>
+🕒 Jodhpur Live Time
+</h2>
+
+
+<div id="clock">
+
+00:00:00
+
+</div>
+
+
+</section>
+<!-- CLOCK STYLE -->
+
+<style>
+
+.clock-box{
+
+    margin:30px;
+    padding:30px;
+    text-align:center;
+    background:linear-gradient(
+    135deg,
+    #7c2d12,
+    #ea580c
+    );
+
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+.clock-box h2{
+
+    font-size:30px;
+    margin-bottom:15px;
+
+}
+
+
+#clock{
+
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing:5px;
+    color:#fff;
+
+}
+
+
+
+/* NEWS SECTION */
+
+
+.news{
+
+    margin:30px;
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+
+}
+
+
+.news h2{
+
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+
+
+.news ul{
+
+    line-height:35px;
+    font-size:18px;
+
+}
+
+
+
+</style>
+
+
+
+
+<!-- JODHPUR NEWS -->
+
+<section class="news">
+
+
+<h2>
+📰 Jodhpur Updates
+</h2>
+
+
+<ul>
+
+<li>🕰 Ghantaghar Market - Heritage Shopping Area</li>
+
+<li>🏰 Mehrangarh Fort - Royal History Experience</li>
+
+<li>🍛 Try Famous Jodhpur Mirchi Bada</li>
+
+<li>📸 Best Blue City Photography Location</li>
+
+<li>🌴 Rajasthan Culture & Tradition</li>
+
+</ul>
+
+
+</section>
+
+
+
+<!-- IMAGE GALLERY -->
+
+<section class="container">
+
+
+<h2 style="
+text-align:center;
+color:#ff9800;
+margin-bottom:25px;
+">
+Jodhpur Gallery
+</h2>
+
+
+<div class="card-area">
+
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ghantaghar%2CJodhpur.jpg/330px-Ghantaghar%2CJodhpur.jpg"
+style="width:100%;border-radius:15px;">
+
+<h3>Ghantaghar</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mehrangarh_Fort_Jodhpur.jpg/640px-Mehrangarh_Fort_Jodhpur.jpg"
+style="width:100%;border-radius:15px;">
+
+<h3>Mehrangarh Fort</h3>
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- SERVICES SECTION -->
+
+<section class="container">
+
+
+<h2 style="
+text-align:center;
+color:#ff9800;
+margin-bottom:25px;
+">
+Jodhpur Smart Browser Features
+</h2>
+
+
+
+<div class="card-area">
+
+
+<div class="card">
+
+<h3>🔎 Smart Search</h3>
+
+<p>
+Jodhpur के tourist places, hotels,
+food और market की जानकारी आसानी से खोजें।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🗺 Location Guide</h3>
+
+<p>
+Ghantaghar से आसपास के famous places
+और travel information प्राप्त करें।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>📷 Photo Gallery</h3>
+
+<p>
+Jodhpur की heritage locations की images
+एक ही जगह देखें।
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>⭐ Heritage Experience</h3>
+
+<p>
+राजस्थानी संस्कृति, किले और पुराने बाजार
+का digital experience।
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- POPULAR PLACES -->
+
+
+<section class="popular">
+
+
+<h2>
+🔥 Popular Jodhpur Search
+</h2>
+
+
+<div class="tags">
+
+
+<span>Ghantaghar</span>
+
+<span>Mehrangarh Fort</span>
+
+<span>Blue City</span>
+
+<span>Umaid Bhawan</span>
+
+<span>Jodhpur Food</span>
+
+<span>Sardar Market</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.popular{
+
+margin:30px;
+padding:30px;
+background:#111827;
+border-radius:25px;
+text-align:center;
+
+}
+
+
+.popular h2{
+
+color:#ff9800;
+margin-bottom:20px;
+
+}
+
+
+.tags{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+
+.tags span{
+
+background:#ff9800;
+padding:12px 22px;
+border-radius:30px;
+font-weight:bold;
+color:white;
+
+}
+
+
+
+</style>
+<!-- FOOTER TOP SECTION -->
+
+<section class="footer-box">
+
+
+<div class="footer-card">
+
+
+<h3>🏰 About Jodhpur</h3>
+
+<p>
+Jodhpur राजस्थान का ऐतिहासिक शहर है।
+यह Blue City, Mehrangarh Fort और Ghantaghar
+के लिए पूरी दुनिया में प्रसिद्ध है।
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer-card">
+
+
+<h3>📞 Quick Links</h3>
+
+<p>
+Home
+<br>
+Places
+<br>
+Food
+<br>
+Culture
+<br>
+Travel Guide
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer-card">
+
+
+<h3>🌐 Digital Jodhpur</h3>
+
+<p>
+Explore Rajasthan Heritage
+और Jodhpur की जानकारी
+एक modern browser design में।
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.footer-box{
+
+margin:30px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+
+
+.footer-card{
+
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+
+
+.footer-card h3{
+
+color:#ff9800;
+margin-bottom:15px;
+
+}
+
+
+
+.footer-card p{
+
+line-height:28px;
+color:#e5e7eb;
+
+}
+
+
+
+</style>
+
+
+
+
+
+<!-- MOBILE MENU AREA -->
+
+<div class="mobile-info">
+
+
+<h2>
+📱 Jodhpur Browser Mobile Experience
+</h2>
+
+
+<p>
+
+यह Website Mobile, Tablet और PC
+सभी Devices पर काम करेगी।
+
+</p>
+
+
+</div>
+
+
+
+<style>
+
+
+.mobile-info{
+
+margin:30px;
+padding:25px;
+text-align:center;
+background:
+linear-gradient(
+135deg,
+#92400e,
+#f97316
+);
+
+border-radius:25px;
+
+}
+
+
+
+.mobile-info h2{
+
+margin-bottom:10px;
+
+}
+
+
+</style>
+<!-- WEATHER SECTION -->
+
+<section class="weather-box">
+
+
+<h2>
+🌤 Jodhpur Weather
+</h2>
+
+
+<div class="weather-content">
+
+
+<div class="weather-item">
+
+<h3>☀️ Today</h3>
+
+<p>
+Sunny Day
+</p>
+
+</div>
+
+
+
+<div class="weather-item">
+
+<h3>🌡 Temperature</h3>
+
+<p>
+32°C
+</p>
+
+</div>
+
+
+
+<div class="weather-item">
+
+<h3>💨 Climate</h3>
+
+<p>
+Rajasthan Desert Weather
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.weather-box{
+
+margin:30px;
+padding:30px;
+background:#172554;
+border-radius:25px;
+text-align:center;
+
+}
+
+
+
+.weather-box h2{
+
+color:#ff9800;
+margin-bottom:25px;
+
+}
+
+
+
+.weather-content{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+
+}
+
+
+
+.weather-item{
+
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+
+}
+
+
+
+.weather-item h3{
+
+color:#f59e0b;
+margin-bottom:10px;
+
+}
+
+
+
+.weather-item p{
+
+font-size:20px;
+
+}
+
+
+
+
+
+/* SEARCH RESULT */
+
+
+#result{
+
+margin-top:20px;
+font-size:20px;
+color:#ffd700;
+font-weight:bold;
+
+}
+
+
+</style>
+
+
+
+
+
+<!-- SEARCH SCRIPT AREA -->
+
+<script>
+
+
+function searchPlace(){
+
+
+let text =
+document.getElementById("searchInput").value;
+
+
+let result =
+document.getElementById("result");
+
+
+
+if(text==""){
+
+result.innerHTML =
+"Please type something to search";
+
+}
+
+else{
+
+
+result.innerHTML =
+"🔍 Searching Jodhpur for: "
++ text;
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+
+<div id="result"></div>
+<!-- ANIMATION SECTION -->
+
+
+<section class="animation-area">
+
+
+<div class="circle">
+
+
+🕰
+
+
+</div>
+
+
+<h2>
+Discover The Blue City
+</h2>
+
+
+<p>
+Jodhpur Heritage • Culture • Royal Rajasthan
+</p>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.animation-area{
+
+margin:40px 30px;
+padding:40px;
+text-align:center;
+background:
+linear-gradient(
+135deg,
+#1e3a8a,
+#7c2d12
+);
+
+border-radius:30px;
+
+}
+
+
+
+.circle{
+
+width:100px;
+height:100px;
+margin:auto;
+
+border-radius:50%;
+
+background:#ff9800;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:45px;
+
+animation:rotateClock 5s linear infinite;
+
+}
+
+
+
+@keyframes rotateClock{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+
+
+.animation-area h2{
+
+margin-top:25px;
+font-size:35px;
+color:#ffd700;
+
+}
+
+
+
+.animation-area p{
+
+font-size:20px;
+margin-top:10px;
+
+}
+
+
+
+
+
+/* NAVIGATION BUTTON */
+
+
+.nav-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin:30px;
+
+}
+
+
+
+.nav-buttons a{
+
+text-decoration:none;
+background:#ff9800;
+color:white;
+
+padding:15px 30px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+
+.nav-buttons a:hover{
+
+background:white;
+color:#8b4513;
+
+}
+
+
+
+</style>
+
+
+
+
+<div class="nav-buttons">
+
+
+<a href="#">
+🏠 Home
+</a>
+
+
+<a href="#">
+📍 Places
+</a>
+
+
+<a href="#">
+🍛 Food
+</a>
+
+
+<a href="#">
+📷 Gallery
+</a>
+
+
+</div>
+<!-- CONTACT / INFO SECTION -->
+
+
+<section class="contact-section">
+
+
+<h2>
+📍 Visit Jodhpur
+</h2>
+
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>🕰 Ghantaghar</h3>
+
+<p>
+Sardar Market,
+Jodhpur, Rajasthan
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<h3>🏰 Heritage</h3>
+
+<p>
+Royal Palaces,
+Forts & Rajasthan Culture
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<h3>🚗 Travel Help</h3>
+
+<p>
+Local Taxi,
+Auto & Tourist Guide
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.contact-section{
+
+margin:30px;
+padding:35px;
+background:#0f172a;
+text-align:center;
+
+}
+
+
+
+.contact-section h2{
+
+color:#ff9800;
+font-size:32px;
+margin-bottom:25px;
+
+}
+
+
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.contact-card{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.5);
+
+}
+
+
+
+.contact-card h3{
+
+color:#f59e0b;
+margin-bottom:15px;
+
+}
+
+
+
+.contact-card p{
+
+line-height:28px;
+
+}
+
+
+
+
+
+/* BACK TO TOP BUTTON */
+
+
+#topBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff9800;
+
+color:white;
+
+font-size:25px;
+
+cursor:pointer;
+
+display:none;
+
+}
+
+
+</style>
+
+
+
+
+<button id="topBtn" onclick="goTop()">
+
+↑
+
+</button>
+
+
+
+
+<script>
+
+
+window.onscroll=function(){
+
+let btn =
+document.getElementById("topBtn");
+
+
+if(
+document.documentElement.scrollTop > 300
+){
+
+btn.style.display="block";
+
+}
+
+else{
+
+btn.style.display="none";
+
+}
+
+};
+
+
+
+function goTop(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+
+</script>
+<!-- CONTACT / INFO SECTION -->
+
+
+<section class="contact-section">
+
+
+<h2>
+📍 Visit Jodhpur
+</h2>
+
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>🕰 Ghantaghar</h3>
+
+<p>
+Sardar Market,
+Jodhpur, Rajasthan
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<h3>🏰 Heritage</h3>
+
+<p>
+Royal Palaces,
+Forts & Rajasthan Culture
+</p>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<h3>🚗 Travel Help</h3>
+
+<p>
+Local Taxi,
+Auto & Tourist Guide
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<style>
+
+
+.contact-section{
+
+margin:30px;
+padding:35px;
+background:#0f172a;
+text-align:center;
+
+}
+
+
+
+.contact-section h2{
+
+color:#ff9800;
+font-size:32px;
+margin-bottom:25px;
+
+}
+
+
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.contact-card{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.5);
+
+}
+
+
+
+.contact-card h3{
+
+color:#f59e0b;
+margin-bottom:15px;
+
+}
+
+
+
+.contact-card p{
+
+line-height:28px;
+
+}
+
+
+
+
+
+/* BACK TO TOP BUTTON */
+
+
+#topBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff9800;
+
+color:white;
+
+font-size:25px;
+
+cursor:pointer;
+
+display:none;
+
+}
+
+
+</style>
+
+
+
+
+<button id="topBtn" onclick="goTop()">
+
+↑
+
+</button>
+
+
+
+
+<script>
+
+
+window.onscroll=function(){
+
+let btn =
+document.getElementById("topBtn");
+
+
+if(
+document.documentElement.scrollTop > 300
+){
+
+btn.style.display="block";
+
+}
+
+else{
+
+btn.style.display="none";
+
+}
+
+};
+
+
+
+function goTop(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+
+</script>
